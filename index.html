@@ -11,12 +11,18 @@
 
     <form id="create-task-form" action="" method="POST">
       <label for="new-task-description">Task description:</label>
-      <input type="text" id="new-task-description" name="new-task-description" placeholder="description">
+      <input type="text" id="newtask" name="new-task-description" placeholder="description">
+      <select>
+        <option value="">--Please Select Urgency--</option>
+        <option value="highUrgency" style="color: red;">Urgent!!</option>
+        <option value="mediumUrgency" style="color: yellow;">Just get it done, ok?</option>
+        <option value="lowUrgency" style="color: green;">Eventually, eventually</option>
+      </select>
       <input type="submit" value="Create New Task">
     </form>
 
     <div id="list">
-      <h2>My Todos:</h2>
+      <h2>My To dos:</h2>
       <ul id="tasks">
       </ul>
     </div>
